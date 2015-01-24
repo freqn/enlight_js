@@ -2,4 +2,4 @@
 
 ## Description
 
-A repository for my own personal study of the book "JavaScript Enlightenment"
+A refresher & repository for my own personal study of the book "JavaScript Enlightenment"
