@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  /* Person is a constructor function.
+   It was written with the intent of being used with the new keyword */
+    var Person = function Person(living, age, gender){
+      // "this" below is the new object that is being created (i.e. this = new Object();)
+      this.living = living;
+      this.age = age;
+      this.gender = gender;
+      this.getGender = function(){
+        return this.gender;
+      };
+      // when the function is called with the new keyword "this" is returned instead of false
+    };
+
+
+    // instantiate a Person object named "ralph"
+    var ralph = new Person(true, 33, 'male');
+
+    // ralf is an object and an instance of person
+    console.log(typeof ralph);
+    console.log(ralph);
+    console.log(ralph.constructor);
+
+  </script>
+
+</body>
+</html>

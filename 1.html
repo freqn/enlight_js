@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // create the cody object
+    var cody = new Object();
+
+    // properties of cody use dot notation
+    cody.living = true;
+    cody.age = 33;
+    cody.gender = "male";
+    cody.getGender = function(){
+      return cody.gender;
+    };
+
+    console.log(cody.getGender());
+  </script>
+  <script>
+    var myObject = new Object();
+    myObject[0] = "f";
+    myObject[1] = "o";
+    myObject[2] = "o";
+
+    console.log(myObject);
+
+    var myString = new String ('foo');
+    console.log(myString);
+  </script>
+  <script>
+    // define Person constructor in order to create custom Person objects later
+
+    var Person = function(living, age, gender) {
+      this.living = living;
+      this.age = age;
+      this.gender = gender;
+      this.getGender = function(){
+        return this.gender;
+        };
+    }
+
+    // instantiate a Person object and store it in the cody variable
+    var cody = new Person(true, 33, 'male');
+
+    console.log(cody);
+  </script>
+  <script>
+    var codyA = new Object();
+    codyA.living = true;
+    codyA.age = 33;
+    codyA.gender = 'male';
+    codyA.getGender = function(){
+      return this.gender;
+    };
+
+
+  </script>
+
+</body>
+</html>
